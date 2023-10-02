@@ -1,0 +1,11 @@
+{
+    // "tailwindCSS.includeLanguages": {
+    //     "vue": "html",
+    //     "vue-html": "html",
+    //   },
+      "editor.quickSuggestions": {
+        "strings": true
+     },
+     "css.validate": false,
+     "editor.inlineSuggest.enabled": true
+}

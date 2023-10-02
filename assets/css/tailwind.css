@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-main text-offGray;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+}
+h1 {
+  font-size: clamp(1.1rem, 5vw, 2.5rem);
+}
+h2 {
+  @apply font-bold border-b-4 tracking-wider pb-2 mb-10;
+  font-size: clamp(1rem, 4vw, 1.7rem);
+}
+h3 {
+  @apply font-bold border-b-4 tracking-wider pb-2 mb-10;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+h4 {
+  @apply font-bold tracking-wider pb-2;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+}
+p{
+  @apply tracking-wide mt-2;
+}
+
+.logo-width {
+  width: clamp(50px, 30vw, 300px);
+}
+
+.home-container {
+    @apply py-52 base-padding relative;
+}
+
+.base-padding {
+    padding-left: clamp(5px, 15vw, 1000px);
+    padding-right: clamp(5px, 15vw, 1000px);
+}
+
+  .footer-container {
+    @apply pt-52 base-padding pb-32 relative;
+  }
+  .footer-container li {
+    @apply text-offWhite p-3 mx-3 rounded-full shadow-lg shadow-black transition-all;
+    position: relative;
+    top: 0;
+  }
+  .footer-container li:hover {
+    top:-5px;
+  }
+  .footer-container .nuxt-icon svg{
+    height: 2rem;
+    width: 2rem;
+  }
+  .website-container {
+    @apply py-36 relative;
+    padding-left: clamp(5px, 5vw, 1000px);
+    padding-right: clamp(5px, 5vw, 1000px);
+}
+
+  /* code from here: https://codepen.io/enbee81/pen/yLyrmyg */
+  .diagonal-container {
+    position: relative;
+    /* margin-top: -1px; */
+  }
+    
+  .diagonal-container:before {
+    @apply shadow-lg;
+      content: "";
+      position: absolute;
+      left: 0; 
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transform: skewy(-2deg);
+      transform-origin: 50% 0;
+      outline: 1px solid transparent;
+      backface-visibility: hidden;
+}
+  
+  
+  .bg-one:before {
+    @apply bg-gradient-to-tl from-primary via-primaryDull to-primaryDark;
+  }
+  
+  .bg-two:before {
+    @apply bg-gradient-to-tl from-offGray via-offGrayDull to-offGrayDark;
+  }
+  .bg-three:before {
+    @apply bg-gradient-to-tl from-offWhite via-offWhiteDull to-offWhiteDark;
+  }
+  .bg-four {
+    @apply bg-gradient-to-tl from-secondary via-secondaryDull to-secondaryDark;
+  }
+
