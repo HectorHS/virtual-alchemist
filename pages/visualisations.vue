@@ -3,63 +3,55 @@ useHead({
   script: [
     {
       src: "https://d3js.org/d3-dsv.v1.min.js",
-      tagPosition: 'head'
+      tagPosition: 'head',
+      type: "text/javascript",
     },
     {
       src: "https://d3js.org/d3-fetch.v1.min.js",
-      tagPosition: 'head'
+      tagPosition: 'head',
+      type: "text/javascript",
     },
     {
       src: "https://code.highcharts.com/highcharts.js",
       type: "text/javascript",
-    //   async: true,
+      tagPosition: 'head'
     },
     {
       src: "https://code.highcharts.com/maps/modules/map.js",
       type: "text/javascript",
-    //   async: true,
+      tagPosition: 'head'
     },
     {
       src: "https://code.highcharts.com/highcharts-more.js",
       type: "text/javascript",
-    //   async: true,
+      tagPosition: 'head'
     },
     {
       src: "https://code.highcharts.com/modules/sankey.js",
       type: "text/javascript",
-    //   async: true,
+      tagPosition: 'head'
     },
     {
       src: "https://code.highcharts.com/modules/dependency-wheel.js",
       type: "text/javascript",
-    //   async: true,
+      tagPosition: 'head'
     },
-    // {
-    //   src: "https://code.highcharts.com/modules/series-label.js",
-    //   type: "text/javascript",
-    //   async: true,
-    // },
-    // {
-    //   src: "https://code.highcharts.com/modules/series-label.js",
-    //   type: "text/javascript",
-    //   async: true,
-    // },
-    // {
-    //   src: "https://code.highcharts.com/maps/highmaps.js",
-    //   type: "text/javascript",
-    //   async: true,
-    // },
-    
-    // {
-    //   src: "https://code.highcharts.com/mapdata/custom/world-eckert3-highres.js",
-    //   type: "text/javascript",
-    //   async: true,
-    // },
-    // {
-    //   src: "https://code.highcharts.com/maps/modules/data.js",
-    //   type: "text/javascript",
-    //   async: true,
-    // },
+
+    {
+      src: "https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.2/sigma.require.min.js",
+      type: "text/javascript",
+      tagPosition: 'head'
+    },
+    {
+      src: "https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.2/plugins/sigma.parsers.gexf.min.js",
+      type: "text/javascript",
+      tagPosition: 'head'
+    },
+    {
+      src: "https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.2/plugins/sigma.renderers.parallelEdges.min.js",
+      type: "text/javascript",
+      tagPosition: 'head'
+    },
 
 
     ]
@@ -101,7 +93,7 @@ useHead({
                 <div class="home-container text-offGray ">
                 <h2 class="border-offGray">Sigma.js</h2>
                 <p>Sigma is a javascript framework that specializes in creating interactive visualisations of network graphs. It works great on its own, or in combination with other network visualisation tools like Gephi.</p>
-                <h4>Guns, germes, and steel: themes visualised.</h4>
+                <h4 class="mt-10 mb-5">Guns, germs, and steel - themes visualised.</h4>
                 <va-nodes></va-nodes>
             </div>
 
