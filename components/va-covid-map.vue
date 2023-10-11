@@ -1,11 +1,11 @@
 <template>
     <figure>
-        <div class="covid-map filters-on-top">
-            <div class="flex flex-1 flex-col pr-2 text-offWhite max-w-full">
-                <div class="chart-filters row1 flex flex-col justify-end items-start mb-2 lg:flex-row-reverse lg:items-center lg:justify-end">
+        <div class="covid-map filters-on-top relative">
+            <div class="flex flex-1 flex-col pr-2 text-offWhite max-w-fullitems-center">
+                <div class="chart-filters row1 flex flex-col justify-end items-start mb-2 lg:flex-row-reverse lg:items-center lg:justify-center">
                     <div class="dashboard-command left">Select a measure</div>
                 </div>
-                <div class="chart-filters row2 mb-2 flex flex-col justify-end items-start lg:flex-row-reverse lg:items-center lg:justify-end">
+                <div class="chart-filters row2 mb-2 flex flex-col justify-end items-start lg:flex-row-reverse lg:items-center lg:justify-center">
                     <div class="dashboard-command left">Click on the play button to animate</div>
                     <div class="play-container flex lg:mr-2"></div>
                 </div>

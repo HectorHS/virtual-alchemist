@@ -1,6 +1,6 @@
 <template>
     <figure>
-        <div class="container chart-container migration-wheel filters-right flex flex-col sm:flex-row-reverse">
+        <div class="container chart-container migration-wheel filters-right flex flex-col sm:flex-row-reverse relative text-offWhite">
             <div class="chart-options top-filters text-center sm:text-start flex flex-col justify-center" >
                 <div class="chart-filters"></div>
                 <div class="chart-legend hidden sm:block"></div>
