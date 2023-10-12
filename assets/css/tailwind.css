@@ -28,6 +28,9 @@ p{
 .logo-width {
   width: clamp(50px, 30vw, 300px);
 }
+.error-logo-width {
+  width: clamp(30px, 20vw, 200px);
+}
 
 .home-container {
     @apply py-52 base-padding relative;
