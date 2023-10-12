@@ -412,24 +412,6 @@ export function createLegend(chart_points, data, parentContainer) {
             legend.innerHTML += '<div class="legend-item"><div class="dot" style="background-color:' + point.color + '" ></div><div class="serieName" id="">' + fCapital(point.name) + '</div></div>';
         }
     }
-    // Click effect for legend
-    // document.querySelectorAll(parentContainer + ' .legend-item').forEach(function (a) {
-    //     a.addEventListener("click", function () {
-    //         var name = this.textContent;
-    //         for (let point of data) {
-    //             let nam = '';
-    //             if (point.name) {
-    //                 nam = fCapital(point.name);
-    //             }
-    //             else if (point.from) {
-    //                 nam = fCapital(point.from);
-    //             }
-    //             if (nam === name) {
-    //                 point.select(true, false);
-    //             }
-    //         }
-    //     });
-    // });
     // Hover effect for legend
     document.querySelectorAll(parentContainer + ' .legend-item').forEach(function (a) {
         a.addEventListener("mouseover", function () {
