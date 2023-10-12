@@ -9,9 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#89d0f5',
-        primaryDull: '#7dc3e8',
-        primaryDark: '#5bbcf1',
+        primary: '#6cb7e0',
+        primaryDull: '#7eb2ce',
+        primaryDark: '#2d98d2',
         secondary: '#0c1f31',
         secondaryDull: '#1c344a',
         secondaryDark: '#050d15',
@@ -22,6 +22,7 @@ export default {
         offGray: '#2d3937',
         offGrayDull:'#2d3039',
         offGrayDark: '#171c1b',
+        link:'#c36'
       },
       fontFamily: {
         'main': ['Poppins','Open Sans', 'Segoe UI', 'Roboto', 'Arial'],

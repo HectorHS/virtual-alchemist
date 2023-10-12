@@ -141,6 +141,15 @@ button {
 .dance span {
     @apply  text-[#6E645A] ;
 }
+.apocalypse {
+    @apply border-[#cea855] bg-[#cea855]/20;
+}
+.apocalypse div {
+    @apply bg-[#cea855];
+}
+.apocalypse span {
+    @apply  text-[#cea855] ;
+}
 
 
 </style>

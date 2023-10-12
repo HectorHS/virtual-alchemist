@@ -4,7 +4,7 @@
       <div class="container sm:mx-auto p-2 flex flex-wrap justify-between">
         <div class="w-auto z-10">
           <!-- Logo -->
-          <img class="h-auto max-w-xs w-14" src="../assets/img/logo.png" alt="Virtual Alchemist logo" />
+          <img class="h-auto max-w-xs w-14" src="/img/logo.png" alt="Virtual Alchemist logo" />
         </div>
         <!-- Desktop nav list -->
         <nav class="hidden sm:block m-0">
@@ -14,9 +14,9 @@
               :key="index"
             >
               <a :href="item.href" class="px-3 font-semibold relative before:absolute before:w-full before:h-[3px] tracking-wide
-    before:-bottom-1 before:left-0 before:bg-primary
+    before:-bottom-1 before:left-0 before:bg-offGray
     before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-    before:transition before:ease-in-out before:duration-300 hover:text-primary">{{ item.title }}</a>
+    before:transition before:ease-in-out before:duration-300">{{ item.title }}</a>
             </li>
           </ul>
         </nav>

@@ -8,7 +8,7 @@
                 <div class="website-container text-offGray ">
                     <h3 class="font-bold mt-5 tracking-wider border-offGray">Navigate Obscurity</h3>
                     <p>Exploring complex subjects and presenting them via data visualizations.</p>
-                    <p>Stack: Django/Python, mySQL, Highcharts.js, Sigma.js, javascript, HTML, CSS(SASS)</p>
+                    <p>Stack: Django/Python, mySQL, Highcharts.js, Sigma.js, Typescript, HTML, CSS(SASS)</p>
                 </div>
                 <div class="diagonal-container bg-no text-offWhite -mt-6">
                     <div class="website-container ">
@@ -38,6 +38,8 @@
             </div>
         </section>
 
+
+
         <!-- epilisi -->
 
         <section>
@@ -51,6 +53,43 @@
                     <div class="website-container ">
                         <div class="p-12">
                             <va-lightbox image="/img/epilisi-full.jpg" buttonClass="epilisi"></va-lightbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- apocalypse -->
+        <section>
+            <div class="grid grid-cols-2 gap-4 diagonal-container before:bg-[#cea855] p-10 -mt-1">
+                <div class="diagonal-container bg-apocalypse text-offWhite -mb-6">
+                    <div class="website-container ">
+                        <div class="p-12">
+                            <va-lightbox image="/img/apocalypse-full.jpg" buttonClass="apocalypse"></va-lightbox>
+                        </div>
+                    </div>
+                </div>
+                <div class="website-container text-offgray">
+                    <h3 class="font-bold mt-5 tracking-wider border-offGray">Cooperation in the Apocalypse</h3>
+                    <p>Data visualisation dashboard with key findings of longitudal academic study.</p>
+                    <p>Stack: Highcharts.js, Typescript, HTML, CSS(SASS)</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- wedding -->
+        <section>
+            <div class="grid grid-cols-2 gap-4 diagonal-container before:bg-[#19301e] p-10 -mt-1">
+                <div class="website-container text-offWhite ">
+                    <h3 class="font-bold mt-5 tracking-wider">Giannis & Fotini</h3>
+                    <p>A wedding site.</p>
+                    <p>Stack: WordPress (Elementor), CSS</p>
+                </div>
+                <div class="diagonal-container bg-wedding text-offWhite -mt-6">
+                    <div class="website-container ">
+                        <div class="p-12">
+                            <va-lightbox image="/img/wedding-full.jpg" buttonClass="wedding"></va-lightbox>
                         </div>
                     </div>
                 </div>
@@ -94,39 +133,21 @@
             </div>
         </section>
 
-        <!-- wedding -->
-        <section>
-            <div class="grid grid-cols-2 gap-4 diagonal-container before:bg-[#19301e] p-10 -mt-1">
-
-                <div class="diagonal-container bg-wedding text-offWhite -mb-6">
-                    <div class="website-container ">
-                        <div class="p-12">
-                            <va-lightbox image="/img/wedding-full.jpg" buttonClass="wedding"></va-lightbox>
-                        </div>
-                    </div>
-                </div>
-                <div class="website-container text-offWhite ">
-                    <h3 class="font-bold mt-5 tracking-wider">Giannis & Fotini</h3>
-                    <p>A wedding site.</p>
-                    <p>Stack: WordPress (Elementor), CSS</p>
-                </div>
-            </div>
-        </section>
 
         <!-- dance therapy -->
         <section>
             <div class="grid grid-cols-2 gap-4 diagonal-container before:bg-[#6E645A] p-10 -mt-1">
-                <div class="website-container text-offWhite ">
-                    <h3 class="font-bold mt-5 tracking-wider">Dance Therapy</h3>
-                    <p>Professional website for dance therapist and related services.</p>
-                    <p>Stack: WordPress (Elementor), CSS</p>
-                </div>
-                <div class="diagonal-container bg-dance text-offWhite -mt-6">
+                <div class="diagonal-container bg-dance text-offWhite -mb-6">
                     <div class="website-container ">
                         <div class="p-12">
                             <va-lightbox image="/img/dance-full.jpg" buttonClass="dance"></va-lightbox>
                         </div>
                     </div>
+                </div>
+                <div class="website-container text-offWhite ">
+                    <h3 class="font-bold mt-5 tracking-wider">Dance Therapy</h3>
+                    <p>Professional website for dance therapist and related services.</p>
+                    <p>Stack: WordPress (Elementor), CSS</p>
                 </div>
             </div>
         </section>
@@ -206,6 +227,10 @@
 
 .bg-wedding:before {
     background: url("/img/wedding.jpg");
+    @apply bg-websites;
+}
+.bg-apocalypse:before {
+    background: url("/img/apocalypse.jpg");
     @apply bg-websites;
 }
 </style>
