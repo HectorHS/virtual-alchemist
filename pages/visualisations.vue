@@ -22,6 +22,11 @@ useHead({
       tagPosition: 'head'
     },
     {
+      src: "https://code.highcharts.com/mapdata/custom/world.js",
+      type: "text/javascript",
+      tagPosition: 'head'
+    },
+    {
       src: "https://code.highcharts.com/highcharts-more.js",
       type: "text/javascript",
       tagPosition: 'head'

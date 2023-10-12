@@ -35,10 +35,6 @@ let loopi = 0;
 let playing = false;
 let map_container_class = ".covid-map";
 
-const topology = await fetch(
-    'https://code.highcharts.com/mapdata/custom/world-eckert3-highres.geo.json'
-).then(response => response.json());
-
 function loadMap() {
     let covid_map_path = "/csv/covid-map.csv";
     let lockdown_notes_path = "/csv/covid-lockdown-notes.csv";
@@ -58,7 +54,6 @@ function loadMap() {
 
         let map_chart = Highcharts.mapChart({
             chart: {
-                map: topology,
                 renderTo: 'covid_map',
                 height: 500,
                 backgroundColor: "#2d3937",
@@ -70,6 +65,7 @@ function loadMap() {
                     joinBy: ['iso-a3', 'country'],
                     colorAxis: 0,
                     borderColor: "#333f3d",
+                    mapData: Highcharts.maps['custom/world']
                 },
             },
             colorAxis: {
@@ -351,7 +347,7 @@ function loadMap() {
                         map_data.push({ country: getCountryCode(row.Country), value: +val, countryName: row.Country });
                     }
                 }
-                let new_slice = { data: map_data, name: parameter, type: 'map', color: "#0070D1" };
+                let new_slice = { data: map_data, name: parameter, type: 'map', color: "#0070D1",  };
                 new_data.push(new_slice);
             }
             return new_data;
