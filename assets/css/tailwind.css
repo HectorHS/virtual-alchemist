@@ -43,21 +43,7 @@ p{
     padding-right: clamp(5px, 15vw, 1000px);
 }
 
-  .footer-container {
-    @apply pt-52 base-padding pb-32 relative;
-  }
-  .footer-container li {
-    @apply text-offWhite p-3 mx-3 rounded-full shadow-lg shadow-black transition-all;
-    position: relative;
-    top: 0;
-  }
-  .footer-container li:hover {
-    top:-5px;
-  }
-  .footer-container .nuxt-icon svg{
-    height: 2rem;
-    width: 2rem;
-  }
+
   .website-container {
     @apply py-36 relative;
     padding-left: clamp(5px, 5vw, 1000px);
