@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-    'nuxt-purgecss',
+    // ['nuxt-purgecss', { safelist: ['bg-primary'] }],
     'nuxt-icons',
   ],
   app: {
