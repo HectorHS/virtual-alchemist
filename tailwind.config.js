@@ -2,6 +2,7 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
   content: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
+  safelist: ['bg-primary', 'bg-offGray','-bottom-1', 'left-0', 'w-full', 'scale-x-100', 'scale-x-0', 'origin-top-left', 'transition', 'ease-in-out', 'duration-300'],
   theme: {
     extend: {
       colors: {
@@ -25,6 +26,6 @@ export default {
       }
     }
   },
-  safelist: ['bg-primary', 'bg-offGray','-bottom-1', 'left-0', 'w-full', 'scale-x-100', 'scale-x-0', 'origin-top-left', 'transition', 'ease-in-out', 'duration-300']
+  
 
 }
