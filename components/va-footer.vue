@@ -20,8 +20,6 @@
                 </a> 
             </li>   
         </ul>
-        <!-- hack for css -->
-        <svg class="hidden"></svg>
 </div>
     <div class="footer-end bg-offBlack text-center">
         <p class="text-gray-500 text-sm">Virtual Alchemist - 2023</p>
@@ -41,6 +39,7 @@
   .footer-container li:hover {
     top:-5px;
   }
+  /* purgecss ignore */
   .footer-container svg{
     height: 2rem;
     width: 2rem;
