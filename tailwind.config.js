@@ -2,7 +2,11 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
   content: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
-  safelist: ['bg-primary'],
+  purge: {
+    options: {
+      whitelist: ['bg-primary'],
+    }
+  },
   theme: {
     extend: {
       colors: {
