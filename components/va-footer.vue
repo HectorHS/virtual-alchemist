@@ -39,7 +39,6 @@
   .footer-container li:hover {
     top:-5px;
   }
-  /* purgecss ignore */
   .footer-container svg{
     height: 2rem;
     width: 2rem;
