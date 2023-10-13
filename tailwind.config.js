@@ -4,7 +4,7 @@ export default {
   content: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
   purge: {
     options: {
-      safelist: ['bg-primary'],
+      // safelist: ['bg-primary'],
     }
   },
   theme: {
