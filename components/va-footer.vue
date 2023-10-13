@@ -20,6 +20,7 @@
                 </a> 
             </li>   
         </ul>
+        <!-- hack for css -->
         <svg class="hidden"></svg>
 </div>
     <div class="footer-end bg-offBlack text-center">
